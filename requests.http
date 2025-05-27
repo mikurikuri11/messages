@@ -1,15 +1,15 @@
 ### GET messages
-GET http://localhost:3000/messages
+GET http://localhost:3001/messages
 Content-Type: application/json
 
 ### POST a new message
-POST http://localhost:3000/messages
+POST http://localhost:3001/messages
 Content-Type: application/json
 
 {
-  "content": "I gonna to go"
+  "content": "Where's the luggage place?"
 }
 
 ### GET a specific message
-GET http://localhost:3000/messages/1
+GET http://localhost:3001/messages/2722
 Content-Type: application/json

@@ -7,17 +7,11 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { CreateMessageDto } from 'src/dtos/create-message.dto';
-import { MessageService } from './messages.service';
+import { MessagesService } from './messages.service';
 
 @Controller('messages')
 export class MessagesController {
-  messagesService: MessageService;
-
-  constructor() {
-    // DON'T DO THIS ON REAL APP
-    // USE DEPENDENCY INJECTION
-    this.messagesService = new MessageService();
-  }
+  constructor(public messagesService: MessagesService) {}
 
   @Get()
   listMessages() {
