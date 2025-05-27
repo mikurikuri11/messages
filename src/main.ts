@@ -1,3 +1,6 @@
+import * as dotenv from 'dotenv';
+dotenv.config();    // これでルートの .env を読み込む
+
 import { NestFactory } from '@nestjs/core';
 import { MessagesModule } from './messages/messages.module';
 import { ValidationPipe } from '@nestjs/common';
